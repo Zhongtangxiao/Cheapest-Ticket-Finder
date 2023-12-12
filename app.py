@@ -16,8 +16,6 @@ github = oauth.remote_app(
     consumer_key='465d050a14ca52fdd640',
     consumer_secret='9ee5831454f58686696b6c3401a1bb0bef34bf91',
 
-    # consumer_key='a7f38279cefeb393db0f',
-    # consumer_secret='c8c64fe85bd7d3ecfd7a660a56603456dde198a8',
 
 
 
