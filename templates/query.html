@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Query</title>
+</head>
+<body>
+<h1>Match Query</h1>
+{% if 'github_token' in session %}
+    <p>Logged in as: {{ user_info.data['login'] }} <a href="/logout">Logout</a></p>
+    <form action="/query" method="post">
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required>
+        <button type="submit">Query</button>
+    </form>
+    {% if matches %}
+        <h2>Query Results:</h2>
+        <table border="1">
+            <tr>
+                <th>Match Website</th>
+                <th>Match Date</th>
+                <th>Match Team</th>
+                <th>Match Price</th>
+                <th>Match Source</th>
+
+            </tr>
+            {% for match in matches %}
+                <tr>
+                    <td>{{ match.website }}</td>
+                    <td>{{ match.time }}</td>
+                    <td>{{ match.team }}</td>
+                    <td>{{ match.price }}</td>
+                    <td>{{ match.link }}</td>
+                    <!-- Add more columns as needed -->
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+{% else %}
+    <p>You are not logged in. <a href="/">Home</a></p>
+{% endif %}
+</body>
+</html>
