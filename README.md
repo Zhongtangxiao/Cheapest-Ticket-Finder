@@ -1,5 +1,9 @@
 # CS411-Project
-Teamproject
+Team 30
+
+Members: Jiale Quan, Zhongtang Xiao, Jiaqin Xu
+
+Video demonstration about the project: https://drive.google.com/file/d/1MTCX-Rdx9RFK2wxXZAowLradFQ4l5g8l/view?usp=sharing
 
 Project Idea: Cheapest Sports Ticket Finder
 
@@ -14,3 +18,4 @@ Third-Party Authentication(Flask_OAuth): Users can log in using their github acc
 Decoupled Architecture(Flask framework & Python & HTML): The application will follow a decoupled architecture with a front-end and a back-end using Python. The two components will communicate via a RESTful interface.
 
 By focusing on user benefits and applying the specified requirements, this project will help sports enthusiasts find affordable tickets to their favorite events, enhancing their overall sports event experience.
+
