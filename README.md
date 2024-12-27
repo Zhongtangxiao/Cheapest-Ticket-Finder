@@ -1,4 +1,4 @@
-#Cheapest-ticket Finder (CS411-Project)#
+# Cheapest-ticket Finder (CS411-Project)
 
 Team 30
 
